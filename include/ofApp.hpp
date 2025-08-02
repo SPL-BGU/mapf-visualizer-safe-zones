@@ -1,6 +1,7 @@
 #pragma once
 
 #include "graph.hpp"
+#include "safe_zones.hpp"
 #include "ofMain.h"
 #include "ofxGui.h"
 
@@ -9,6 +10,7 @@ class ofApp : public ofBaseApp
 public:
   const Graph* G;
   const Solution* P;  // plan
+  const SafeZonesManager* safe_zones_manager; // safe zones manager
   const int N;        // number of agents
   const int T;        // makespan
   const Config goals;
@@ -60,5 +62,5 @@ public:
   void dragEvent(ofDragInfo dragInfo);
   void gotMessage(ofMessage msg);
 
-  ofApp(Graph* _G, Solution* _P, bool flg_capture_only = false);
+  ofApp(Graph* _G, Solution* _P, SafeZonesManager * _safe_zones_manager, bool flg_capture_only = false);
 };

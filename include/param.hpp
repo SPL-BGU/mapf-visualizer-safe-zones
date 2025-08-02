@@ -22,4 +22,7 @@ namespace Color
       ofColor(255, 152, 0),  ofColor(0, 188, 212),  ofColor(156, 39, 176),
       ofColor(121, 85, 72),  ofColor(255, 187, 59), ofColor(244, 67, 54),
       ofColor(96, 125, 139), ofColor(0, 150, 136),  ofColor(63, 81, 181)};
+
+  void init_agent_groups(int num_groups);
+  ofColor get_agent_group_color(int group_id);
 }  // namespace Color

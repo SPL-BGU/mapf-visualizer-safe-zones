@@ -79,6 +79,6 @@ struct Graph {
   int width;   // grid width
   int height;  // grid height
   Graph();
-  Graph(char* filename);  // taking map filename
+  Graph(const char* filename);  // taking map filename
   ~Graph();
 };
